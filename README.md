@@ -94,6 +94,47 @@ bharathkumardasaraju@pulumi-aws-project$
 
 ```
 
+### pulumi stack changes
+```shell
+bharathkumardasaraju@pulumi-aws-project$ pulumi up --stack dev
+Previewing update (dev)
+
+View in Browser (Ctrl+O): https://app.pulumi.com/Bharathkumarraju/pulumi-aws-project/dev/previews/a543a4a4-f921-43c4-8a57-b57da34737d5
+
+     Type                 Name                     Plan       
+     pulumi:pulumi:Stack  pulumi-aws-project-dev              
+ +   ├─ aws:s3:Bucket     bkrs1-singapores-bucket  create     
+ -   └─ aws:s3:Bucket     bkrs-singapores-bucket   delete     
+
+Resources:
+    + 1 to create
+    - 1 to delete
+    2 changes. 1 unchanged
+
+Do you want to perform this update? yes
+Updating (dev)
+
+View in Browser (Ctrl+O): https://app.pulumi.com/Bharathkumarraju/pulumi-aws-project/dev/updates/3
+
+     Type                 Name                     Status              
+     pulumi:pulumi:Stack  pulumi-aws-project-dev                       
+ +   ├─ aws:s3:Bucket     bkrs1-singapores-bucket  created (2s)        
+ -   └─ aws:s3:Bucket     bkrs-singapores-bucket   deleted (0.98s)     
+
+Outputs:
+  ~ bucketName: "bkrs-singapores-bucket-185a737" => "bkrs1-singapores-bucket-f27db92"
+
+Resources:
+    + 1 created
+    - 1 deleted
+    2 changes. 1 unchanged
+
+Duration: 7s
+
+bharathkumardasaraju@pulumi-aws-project$ 
+
+```
+
 #### from linkedin learning
 
 https://www.linkedin.com/learning/multicloud-application-infrastructure-as-code-with-pulumi/manage-stacks-and-configurations-with-pulumi
