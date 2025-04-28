@@ -1,3 +1,2 @@
 config:
-  aws:region: ap-south-1
   pulumi-aws-project:region: ap-south-1
