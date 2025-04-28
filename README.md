@@ -6,8 +6,11 @@ IaC with pulumi
 
 ![pulumi up](imgs/img.png)
 
-### pulumi aws
+## pulumi aws
 ![pulumi aws up](imgs/img_1.png)
+
+## pulumi aws stacks
+![pulumi aws stacks](imgs/img_2.png)
 
 ### pulumi stacks
 ```shell
