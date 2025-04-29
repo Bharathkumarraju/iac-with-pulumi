@@ -13,7 +13,7 @@ const projectToReference = ""; // put your project here
 const azureStack = new pulumi.StackReference(`${org}/${projectToReference}/${stackToReference}`);
 const storageAccountName = azureStack.getOutput("storageAccountName");
 
-const bucket = new aws.s3.Bucket("adora-store", {
+const bucket = new aws.s3.Bucket("bkrdsraju-store", {
     acl: "private",
     tags: {
         Environment: pulumi.getStack(),

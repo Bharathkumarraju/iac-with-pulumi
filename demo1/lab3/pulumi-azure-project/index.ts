@@ -6,13 +6,13 @@ const config = new pulumi.Config();
 const location = config.require("location");
 
 // Create an Azure Resource Group
-const resourceGroup = new resources.ResourceGroup("adora-rg", {
-    resourceGroupName: "adora-rg",
+const resourceGroup = new resources.ResourceGroup("bkrdsraju-rg", {
+    resourceGroupName: "bkrdsraju-rg",
     location: location
 });
 
 // Create an Azure resource (Storage Account)
-const storageAccount = new storage.StorageAccount("adorastore2", {
+const storageAccount = new storage.StorageAccount("bkrdsrajustore2", {
     resourceGroupName: resourceGroup.name,
     sku: {
         name: storage.SkuName.Standard_LRS,

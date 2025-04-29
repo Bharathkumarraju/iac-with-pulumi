@@ -12,7 +12,8 @@ This Node.js API allows you to fetch weather data for a specific city and store 
 ## Setup Instructions
 - Clone the repository:
     ``` bash
-    git clone https://github.com/AdoraNwodo/multicloud-course.git
+    git clone https://github.com/bharathkumarraju/iac-with-pulumi.git
+    cd demo3/weather-source-code
     ```
 
 - Install the dependencies:

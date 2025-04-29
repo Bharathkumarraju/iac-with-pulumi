@@ -10,7 +10,7 @@
             "type": "service",
             "state": {
                 "url": "https://api.pulumi.com",
-                "owner": "adorahack",
+                "owner": "bkrdsrajuhack",
                 "project": "pulumi-multicloud-state-project",
                 "stack": "dev"
             }
